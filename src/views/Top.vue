@@ -7,6 +7,7 @@
           <p>お好み焼きをひっくり返そう!</p>
           <p>スワイプした距離でお好み焼きのひっくり返り方が変わるよ!</p>
           <p>画面をタッチしたら始まるよ!</p>
+          <p>パソコンの人はドラッグして遊んでね!</p>
           <img src="../assets/images/swipe.png" alt="" srcset="" />
         </div>
       </div>
@@ -24,7 +25,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss">
 /* 最初の説明画面 */
 #splash {
   position: fixed;
@@ -34,13 +35,14 @@ export default {
   background: #333;
   text-align: center;
   color: #fff;
-}
-#splash img {
-  z-index: -1;
+  img {
+    z-index: -1;
+    width: 30vw;
+  }
 }
 
 #splash_text {
-  margin: 50% auto;
+  margin: 50vh auto;
   text-align: center;
 }
 </style>

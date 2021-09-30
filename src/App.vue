@@ -20,14 +20,20 @@ export default {
   data() {
     return {
       isVisibleTopPage: true,
-      isVisibleMainPage: false,
+      isVisibleMainPage: true,
     };
   },
   methods: {
     startGame() {
       this.isVisibleTopPage = false;
-      this.isVisibleMainPage = true;
     },
   },
 };
 </script>
+
+<style lang="scss">
+* {
+  margin: 0;
+  font-family: "ほのか新丸ゴシック";
+}
+</style>

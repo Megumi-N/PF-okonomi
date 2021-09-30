@@ -20,7 +20,6 @@
         alt="お好み焼き画像"
       />
       <img src="../assets/images/teppan.png" class="teppan" alt="鉄板画像" />
-      <p id="text">上方向にスワイプ!</p>
     </div>
 
     <!-- <OpenModal v-if="isVisibleMainPage" /> -->
@@ -62,21 +61,20 @@ export default {
           level: 2,
           titleText: "惜しい！あとひと押し!!",
           bodyText: `
-              惜しい！
-              あと少し!
-              あと少し距離を伸ばそう!
-              お好み焼きまであと一歩!!`,
+            惜しい！
+            あと少し!
+            あと少し距離を伸ばそう!
+            お好み焼きまであと一歩!!`,
         },
         {
           level: 3,
           titleText: "お好み焼き名人を襲名",
           bodyText: `
-          とんでもないセンスに満ち溢れていますね...
-          手首のスナップ...
-          そして力の入れ具合...
-          もはや名人です。`,
-          twitter:
-            "https://twitter.com/intent/tweet?&text=我、お好み焼き返し名人なり!!%0a%0aお好み焼きを返す技術力が今、試される...%0aスマホから遊んでね。%0a%23お好み焼き%0a%23くそアプリ%0a%23お好み焼きをひっくり返すだけのアプリ%0a&url=https://zen-sinoussi-c18c33.netlify.app/",
+            とんでもないセンスに満ち溢れていますね...
+            手首のスナップ...
+            そして力の入れ具合...
+            もはや名人です。`,
+          twitter: `https://twitter.com/intent/tweet?&text=我、お好み焼き返し名人なり!!%0a%0aお好み焼きを返す技術力が今、試される...%0aスマホから遊んでね。%0a%23お好み焼き%0a%23くそアプリ%0a%23お好み焼きをひっくり返すだけのアプリ%0a&url=https://zen-sinoussi-c18c33.netlify.app/`,
         },
         {
           level: 4,
@@ -116,8 +114,6 @@ export default {
       const moveY = this.moveY;
       if (moveY > 0) {
         const okonomiyaki = document.getElementById("okonomiyaki");
-        // const gif = document.getElementById("swipe_area");
-
         //level1
         if (moveY < 200) {
           okonomiyaki.classList = "okonomiyaki_up_level1";
@@ -132,13 +128,14 @@ export default {
           setTimeout(() => {
             this.openModal = true;
             this.modalContents = this.modalContents[1];
-            // modalModify();
           }, 3000);
         }
         //level3
         else if (400 <= moveY && moveY < 450) {
           okonomiyaki.classList = "okonomiyaki_up_level3";
-          document.getElementById("uragaeshi").classList.add("uragaeshi");
+          const ura = document.getElementById("uragaeshi");
+          ura.classList.add("uragaeshi");
+
           // 名人のgifを遅延表示させるメソッド
           setTimeout(() => {
             const image = document.createElement("img");
@@ -150,8 +147,8 @@ export default {
             // 名人のモーダルを遅延表示させる
             setTimeout(() => {
               this.openModal = true;
-              this.modalContents = this.modalContents[1];
-            }, 3000);
+              this.modalContents = this.modalContents[2];
+            }, 4000);
           }, 3200);
         }
         //level4
@@ -159,7 +156,7 @@ export default {
           okonomiyaki.classList = "okonomiyaki_up_level4";
           setTimeout(() => {
             this.openModal = true;
-            this.modalContents = this.modalContents[0];
+            this.modalContents = this.modalContents[3];
           }, 3000);
         }
       }
@@ -188,18 +185,10 @@ main {
   position: relative;
   width: 100vw;
   height: 100vh;
-  #text {
-    position: absolute;
-    top: 70vh;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-  }
 }
 
 img {
-  width: 90vw;
+  width: 40vw;
   position: absolute;
   top: 10vh;
   left: 0;
