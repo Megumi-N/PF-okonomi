@@ -1,43 +1,28 @@
 <template>
   <v-main>
-    <v-row v-my-touch:start="swipeStart" v-my-touch:end="swipeEnd">
-      <v-col>
-        <div id="swipe_area">
-          <img
-            src="../assets/images/kemuri1.png"
-            class="kemuri1"
-            alt="煙画像1"
-          />
-          <img
-            src="../assets/images/kemuri2.png"
-            class="kemuri2"
-            alt="煙画像2"
-          />
-          <img
-            src="../assets/images/kemuri3.png"
-            class="kemuri2"
-            alt="煙画像3"
-          />
-          <img
-            src="../assets/images/uragaeshi.png"
-            id="uragaeshi"
-            alt="裏返しのお好み焼き画像"
-          />
-          <img
-            src="../assets/images/oko.png"
-            id="okonomiyaki"
-            class="okonomiyaki"
-            alt="お好み焼き画像"
-          />
-          <img
-            src="../assets/images/teppan.png"
-            class="teppan"
-            alt="鉄板画像"
-          />
-          <p id="text">上方向にスワイプ!</p>
-        </div>
-      </v-col>
-    </v-row>
+    <div
+      id="swipe_area"
+      v-my-touch:start="swipeStart"
+      v-my-touch:end="swipeEnd"
+    >
+      <img src="../assets/images/kemuri1.png" class="kemuri1" alt="煙画像1" />
+      <img src="../assets/images/kemuri2.png" class="kemuri2" alt="煙画像2" />
+      <img src="../assets/images/kemuri3.png" class="kemuri2" alt="煙画像3" />
+      <img
+        src="../assets/images/uragaeshi.png"
+        id="uragaeshi"
+        alt="裏返しのお好み焼き画像"
+      />
+      <img
+        src="../assets/images/oko.png"
+        id="okonomiyaki"
+        class="okonomiyaki"
+        alt="お好み焼き画像"
+      />
+      <img src="../assets/images/teppan.png" class="teppan" alt="鉄板画像" />
+      <p id="text">上方向にスワイプ!</p>
+    </div>
+
     <!-- <OpenModal v-if="isVisibleMainPage" /> -->
     <OpenModal v-if="openModal" :val="modalContents" />
   </v-main>

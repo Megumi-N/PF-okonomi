@@ -1,11 +1,9 @@
 <template>
   <v-app>
-    <v-row>
-      <v-col @click="startGame">
-        <Top v-if="isVisibleTopPage" />
-        <Main v-if="isVisibleMainPage"
-      /></v-col>
-    </v-row>
+    <div @click="startGame">
+      <Top v-if="isVisibleTopPage" />
+      <Main v-if="isVisibleMainPage" />
+    </div>
   </v-app>
 </template>
 
