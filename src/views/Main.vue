@@ -197,6 +197,11 @@ img {
   /* 画像のドラッグ無効化 */
   -webkit-user-drag: none;
 }
+@media screen and (max-width: 600px) {
+  img {
+    width: 90vw;
+  }
+}
 
 .teppan {
   z-index: 1;

@@ -3,12 +3,12 @@
     <v-col>
       <div id="splash">
         <div id="splash_text">
+          <img src="../assets/images/swipe.png" alt="スワイプ画像" />
           <p>上方向にスワイプして</p>
           <p>お好み焼きをひっくり返そう!</p>
           <p>スワイプした距離でお好み焼きのひっくり返り方が変わるよ!</p>
           <p>画面をタッチしたら始まるよ!</p>
           <p>パソコンの人はドラッグして遊んでね!</p>
-          <img src="../assets/images/swipe.png" alt="" srcset="" />
         </div>
       </div>
     </v-col>
