@@ -5,9 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+    <!-- twitter card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="お好み焼きをひっくり返すだけのアプリ" />
+    <meta
+      prpoerty="og:description"
+      content="お好み焼きをひっくり返すだけのアプリ。スマホオンリー。"
+    />
+    <meta property="og:url" content="<%= BASE_URL %>" />
+    <meta
+      property="og:image"
+      content="https://user-images.githubusercontent.com/64998512/135167507-dd602342-146e-4254-aa54-796d7ea6cb39.png"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RD582VJHBC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-RD582VJHBC");
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css"
+    />
+    <title>お好み焼きをひっくり返すだけのアプリ</title>
   </head>
   <body>
     <noscript>
