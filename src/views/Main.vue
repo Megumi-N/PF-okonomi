@@ -1,10 +1,6 @@
 <template>
-  <v-main>
-    <div
-      id="swipe_area"
-      v-my-touch:start="swipeStart"
-      v-my-touch:end="swipeEnd"
-    >
+  <v-main v-my-touch:start="swipeStart" v-my-touch:end="swipeEnd">
+    <div id="swipe_area">
       <img src="../assets/images/kemuri1.png" class="kemuri1" alt="煙画像1" />
       <img src="../assets/images/kemuri2.png" class="kemuri2" alt="煙画像2" />
       <img src="../assets/images/kemuri3.png" class="kemuri2" alt="煙画像3" />
@@ -92,9 +88,10 @@ export default {
   methods: {
     swipeStart: function (e) {
       const isTouchDevice = window.ontouchstart !== undefined;
+
       // デバイスがタッチ対応の時
       if (isTouchDevice) {
-        this.startY = e.changedTouches[0].pageY;
+        this.startY = this.e.changedTouches[0].pageY;
       } // デバイスがタッチ非対応の時
       else {
         this.startY = e.pageY;
@@ -178,7 +175,7 @@ export default {
 // }
 
 main {
-  background-color: palegreen;
+  height: 100vh;
 }
 
 #swipe_area {
