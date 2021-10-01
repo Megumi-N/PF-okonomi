@@ -167,15 +167,15 @@ export default {
 
 <style lang="scss">
 /* プレイ画面 */
-#container {
-  width: 100%;
-  height: 100vh;
-  background: #ccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+// #container {
+//   width: 100%;
+//   height: auto;
+//   background: #ccc;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+// }
 
 main {
   background-color: palegreen;
@@ -184,7 +184,7 @@ main {
 #swipe_area {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: auto;
 }
 
 img {

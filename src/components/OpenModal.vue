@@ -60,6 +60,5 @@ export default {
   z-index: 2;
   width: 50%;
   padding: 1em;
-  background: #fff;
 }
 </style>

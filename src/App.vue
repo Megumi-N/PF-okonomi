@@ -34,6 +34,12 @@ export default {
 <style lang="scss">
 * {
   margin: 0;
+  padding: 0;
   font-family: "ほのか新丸ゴシック";
+  max-width: 100%;
+  height: auto;
+}
+#app {
+  background-color: palegreen;
 }
 </style>

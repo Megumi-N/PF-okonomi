@@ -31,7 +31,7 @@ export default {
   position: fixed;
   z-index: 999;
   width: 100%;
-  height: 100%;
+  height: auto;
   background: #333;
   text-align: center;
   color: #fff;
