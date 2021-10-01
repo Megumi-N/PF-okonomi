@@ -32,7 +32,7 @@ export default {
     return {
       dialog: true,
       reload: "もう一度挑戦する",
-      twitter: `https://twitter.com/intent/tweet?&text=お好み焼きを返す技術力が今、試される...%0aスマホから遊んでね。%0a%23お好み焼き%0a%23くそアプリ%0a%23お好み焼きをひっくり返すだけのアプリ%0a&url=`,
+      twitter: `https://twitter.com/intent/tweet?&text=お好み焼きを返す技術力が今、試される...%0aスマホから遊んでね。%0a%23お好み焼き%0a%23くそアプリ%0a%23お好み焼きをひっくり返すだけのアプリ%0a&url=https://zen-sinoussi-c18c33.netlify.app/`,
     };
   },
   methods: {
