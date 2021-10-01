@@ -91,7 +91,7 @@ export default {
 
       // デバイスがタッチ対応の時
       if (isTouchDevice) {
-        this.startY = this.e.changedTouches[0].pageY;
+        this.startY = e.changedTouches[0].pageY;
       } // デバイスがタッチ非対応の時
       else {
         this.startY = e.pageY;
@@ -100,11 +100,11 @@ export default {
     swipeEnd: function (e) {
       const isTouchDevice = window.ontouchstart !== undefined;
       if (isTouchDevice) {
-        this.moveY = e.changedTouches[0].pageY;
+        this.endY = e.changedTouches[0].pageY;
       } else {
         this.endY = e.pageY;
-        this.moveY = this.startY - this.endY;
       }
+      this.moveY = this.startY - this.endY;
       this.result();
     },
     result: function () {
