@@ -42,4 +42,8 @@ export default {
 #app {
   background-color: palegreen;
 }
+.v-application--wrap {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
 </style>
